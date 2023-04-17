@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/k4etaogunfdsafra?svg=true)](https://ci.appveyor.com/project/Alla1311/testmodepatterns2)
