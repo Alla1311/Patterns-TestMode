@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class AuthTest {
     @BeforeEach
     void setUp() {
-        open("http://localhost9999");
+        open("http://localhost:9999/");
     }
 
     @Test
@@ -31,6 +31,7 @@ public class AuthTest {
         $("button.button").click();
         $("[data-test-id='error-notification' ] .notification__content").shouldHave(Condition.exactText("Ошибка! Неверно указан логин или пароль")).shouldBe((Condition.visible));
     }
+
     @Test
     @DisplayName("Should get error message if login with blocked registered user")
     void shouldGerErrorIfBlockedUser() {
@@ -40,6 +41,7 @@ public class AuthTest {
         $("button.button").click();
         $("[data-test-id='error-notification' ] .notification__content").shouldHave(Condition.exactText("Ошибка! Пользователь заблокирован")).shouldBe((Condition.visible));
     }
+
     @Test
     @DisplayName("Should get error message if login with wrong login")
     void shouldGerErrorIfWrongLogin() {
@@ -50,6 +52,7 @@ public class AuthTest {
         $("button.button").click();
         $("[data-test-id='error-notification' ] .notification__content").shouldHave(Condition.exactText("Ошибка! Неверно указан логин или пароль")).shouldBe((Condition.visible));
     }
+
     @Test
     @DisplayName("Should get error message if login with wrong password")
     void shouldGerErrorIfWrongPassword() {

@@ -19,14 +19,14 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
     testImplementation 'io.rest-assured:rest-assured:4.3.0'
     implementation 'io.rest-assured:rest-assured:4.3.0'
-    testImplementation 'com.google.code.gson:gson:2.8.6'
+    //implementation 'com.google.code.gson:gson:2.8.6'
     testImplementation 'com.github.javafaker:javafaker:1.0.1'
     implementation 'com.github.javafaker:javafaker:1.0.2'
     compileOnly 'org.projectlombok:lombok:1.18.12'
     annotationProcessor 'org.projectlombok:lombok:1.18.12'
     testCompileOnly 'org.projectlombok:lombok:1.18.12'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
-    testImplementation (group: 'com.codeborne', name: 'selenide', version: '5.14.2');
+    testImplementation(group: 'com.codeborne', name: 'selenide', version: '5.14.2');
 }
 
 test {
